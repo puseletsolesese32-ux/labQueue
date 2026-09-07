@@ -1,0 +1,30 @@
+# LabQueue | WeThinkCode_ Peer Help & Review Sync
+
+> A lightweight, real-time ticket queue for lab hours that connects stuck students with peers ready to review code and help out.
+
+---
+
+## The Problem
+During lab hours, finding out who needs help on specific topics (Java OOP, SQL queries, DOM manipulation) can get chaotic in large group chats. Important questions get buried, and available peers don't always know who needs assistance.
+
+## The Solution
+**LabQueue** provides a clean, local dashboard where students can:
+- **Submit a Help Ticket:** Specify their name, topic, desk/Discord location, and a brief problem summary.
+- **Track Active Requests:** View live open tickets with visual status badges.
+- **Claim & Resolve:** Classmates who finish their work can claim open tickets to mentor others and mark them resolved when complete.
+
+---
+
+## Built With
+- **HTML5** – Structured semantic layout & accessible form inputs.
+- **CSS3** – Clean card UI, responsive CSS Grid/Flexbox layout, and custom badges.
+- **Vanilla JavaScript** – Dynamic DOM manipulation, event delegation, and state updates.
+- **Browser LocalStorage** – Persists queue state across page refreshes.
+
+---
+
+## Getting Started Locally
+
+1. **Clone or Download:**
+   ```bash
+   git clone [https://github.com/your-username/labqueue.git](https://github.com/your-username/labqueue.git)

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LabQueue | Peer Help Sync</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1> WeThinkCode_ Lab Queue</h1>
+    <p>Get help with your code or help a classmate out!</p>
+  </header>
+
+  <main class="container">
+    <section class="card form-section">
+      <h2>Request Code Review / Help</h2>
+      <form id="ticket-form">
+        <div class="form-group">
+          <label for="student-name">Your Name</label>
+          <input type="text" id="student-name" placeholder="e.g. Puseletso" required>
+        </div>
+
+        <div class="form-group">
+          <label for="topic">Topic / Language</label>
+          <select id="topic" required>
+            <option value="" disabled selected>Select topic...</option>
+            <option value="Java / OOP">Java / OOP</option>
+            <option value="Python">Python</option>
+            <option value="HTML / CSS / JS">HTML / CSS / JS</option>
+            <option value="SQL / Database">SQL / Database</option>
+            <option value="Git & GitHub">Git & GitHub</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="desk-location">Station / Desk Number</label>
+          <input type="text" id="desk-location" placeholder="e.g. Desk 14" required>
+        </div>
+
+        <div class="form-group">
+          <label for="problem-desc">Brief Problem Summary</label>
+          <textarea id="problem-desc" rows="3" placeholder="e.g. Stuck on Java interface implementation..." required></textarea>
+        </div>
+
+        <button type="submit" id="submit-btn">Submit Ticket</button>
+      </form>
+    </section>
+
+    <section class="card queue-section">
+      <div class="queue-header">
+        <h2>Active Queue</h2>
+        <span id="ticket-count" class="badge">0 Open</span>
+      </div>
+
+      <div id="queue-list" class="queue-list">
+        <p class="empty-msg">No open tickets right now</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
